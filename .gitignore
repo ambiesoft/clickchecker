@@ -1,0 +1,7 @@
+
+# /
+/*.suo
+
+# /clickchecker/
+/clickchecker/bin
+/clickchecker/obj
