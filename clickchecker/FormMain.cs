@@ -36,17 +36,28 @@ namespace clickchecker
 
             // Load from ini file
             bool bval;
-            HashIni ini = Profile.ReadAll(IniPath);
-            Profile.GetBool(SECTION_OPTION, KEY_CHECK_SINGLECLICK, true, out bval, ini);
-            chkShowSingleClick.Checked = bval;
-            Profile.GetBool(SECTION_OPTION, KEY_CHECK_DOUBLECLICK, false, out bval, ini);
-            chkShowDoubleClick.Checked = bval;
-            Profile.GetBool(SECTION_OPTION, KEY_CHECK_UP, false, out bval, ini);
-            chkShowUp.Checked = bval;
-            Profile.GetBool(SECTION_OPTION, KEY_CHECK_DOWN, true, out bval, ini);
-            chkShowDown.Checked = bval;
+            try
+            {
+                HashIni ini = Profile.ReadAll(IniPath, true);
 
-            AmbLib.LoadFormXYWH(this, SECTION_LOCATION, ini);
+                Profile.GetBool(SECTION_OPTION, KEY_CHECK_SINGLECLICK, true, out bval, ini);
+                chkShowSingleClick.Checked = bval;
+                Profile.GetBool(SECTION_OPTION, KEY_CHECK_DOUBLECLICK, false, out bval, ini);
+                chkShowDoubleClick.Checked = bval;
+                Profile.GetBool(SECTION_OPTION, KEY_CHECK_UP, false, out bval, ini);
+                chkShowUp.Checked = bval;
+                Profile.GetBool(SECTION_OPTION, KEY_CHECK_DOWN, true, out bval, ini);
+                chkShowDown.Checked = bval;
+
+                AmbLib.LoadFormXYWH(this, SECTION_LOCATION, ini);
+            }
+            catch(FileNotFoundException)
+            { }
+            catch (Exception ex)
+            {
+                CppUtils.Alert(ex);
+                Environment.Exit(1);
+            }
 
             // Set Title
             StringBuilder sbTitle = new StringBuilder();
@@ -100,8 +111,10 @@ namespace clickchecker
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            HashIni ini = Profile.ReadAll(IniPath);
             bool success = true;
+          
+            HashIni ini = Profile.ReadAll(IniPath);
+                
             success &= Profile.WriteBool(SECTION_OPTION, KEY_CHECK_SINGLECLICK, chkShowSingleClick.Checked, ini);
             success &= Profile.WriteBool(SECTION_OPTION, KEY_CHECK_DOUBLECLICK, chkShowDoubleClick.Checked, ini);
             success &= Profile.WriteBool(SECTION_OPTION, KEY_CHECK_UP, chkShowUp.Checked, ini);
@@ -109,7 +122,18 @@ namespace clickchecker
 
             success &= AmbLib.SaveFormXYWH(this, SECTION_LOCATION, ini);
 
-            success &= Profile.WriteAll(ini, IniPath);
+            if (success)
+            {
+                try
+                {
+                    success &= Profile.WriteAll(ini, IniPath, true);
+                }
+                catch (Exception)
+                {
+                    success = false;
+                }
+            }
+
             if(!success)
             {
                 CppUtils.Alert(Properties.Resources.SAVE_FAILED);
