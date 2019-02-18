@@ -6,14 +6,55 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
+
+using Ambiesoft;
 
 namespace clickchecker
 {
     public partial class FormMain : Form
     {
+        readonly string SECTION_OPTION = "Option";
+        readonly string KEY_CHECK_SINGLECLICK = "CheckSingleClick";
+        readonly string KEY_CHECK_DOUBLECLICK = "CheckDoubleClick";
+        readonly string KEY_CHECK_UP = "CheckUp";
+        readonly string KEY_CHECK_DOWN = "CheckDown";
+
+        readonly string SECTION_LOCATION = "Window";
+
+        string IniPath
+        {
+            get
+            {
+                return Path.Combine(Path.GetDirectoryName(Application.ExecutablePath),
+                    Path.GetFileNameWithoutExtension(Application.ExecutablePath) + ".ini");
+            }
+        }
         public FormMain()
         {
             InitializeComponent();
+
+            // Load from ini file
+            bool bval;
+            HashIni ini = Profile.ReadAll(IniPath);
+            Profile.GetBool(SECTION_OPTION, KEY_CHECK_SINGLECLICK, true, out bval, ini);
+            chkShowSingleClick.Checked = bval;
+            Profile.GetBool(SECTION_OPTION, KEY_CHECK_DOUBLECLICK, false, out bval, ini);
+            chkShowDoubleClick.Checked = bval;
+            Profile.GetBool(SECTION_OPTION, KEY_CHECK_UP, false, out bval, ini);
+            chkShowUp.Checked = bval;
+            Profile.GetBool(SECTION_OPTION, KEY_CHECK_DOWN, true, out bval, ini);
+            chkShowDown.Checked = bval;
+
+            AmbLib.LoadFormXYWH(this, SECTION_LOCATION, ini);
+
+            // Set Title
+            StringBuilder sbTitle = new StringBuilder();
+            sbTitle.Append(Application.ProductName);
+            sbTitle.Append(" ");
+            sbTitle.Append("ver");
+            sbTitle.Append(AmbLib.getAssemblyVersion(System.Reflection.Assembly.GetExecutingAssembly(), 3));
+            this.Text = sbTitle.ToString();
         }
 
 
@@ -56,6 +97,25 @@ namespace clickchecker
             line.AppendLine();
             txtLog.AppendText(line.ToString());
         }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            HashIni ini = Profile.ReadAll(IniPath);
+            bool success = true;
+            success &= Profile.WriteBool(SECTION_OPTION, KEY_CHECK_SINGLECLICK, chkShowSingleClick.Checked, ini);
+            success &= Profile.WriteBool(SECTION_OPTION, KEY_CHECK_DOUBLECLICK, chkShowDoubleClick.Checked, ini);
+            success &= Profile.WriteBool(SECTION_OPTION, KEY_CHECK_UP, chkShowUp.Checked, ini);
+            success &= Profile.WriteBool(SECTION_OPTION, KEY_CHECK_DOWN, chkShowDown.Checked, ini);
+
+            success &= AmbLib.SaveFormXYWH(this, SECTION_LOCATION, ini);
+
+            success &= Profile.WriteAll(ini, IniPath);
+            if(!success)
+            {
+                CppUtils.Alert(Properties.Resources.SAVE_FAILED);
+            }
+        }
+
 
     }
 }

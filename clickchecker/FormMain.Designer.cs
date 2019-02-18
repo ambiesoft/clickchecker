@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelClick = new System.Windows.Forms.Panel();
             this.txtLog = new System.Windows.Forms.TextBox();
             this.lblClickHere = new System.Windows.Forms.Label();
@@ -41,123 +42,74 @@
             // 
             // panelClick
             // 
-            this.panelClick.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.panelClick, "panelClick");
             this.panelClick.BackColor = System.Drawing.Color.Blue;
-            this.panelClick.Location = new System.Drawing.Point(12, 25);
             this.panelClick.Name = "panelClick";
-            this.panelClick.Size = new System.Drawing.Size(549, 145);
-            this.panelClick.TabIndex = 0;
             this.panelClick.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panelClick_MouseDoubleClick);
             this.panelClick.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelClick_MouseDown);
             this.panelClick.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelClick_MouseUp);
             // 
             // txtLog
             // 
-            this.txtLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLog.Location = new System.Drawing.Point(12, 205);
-            this.txtLog.Multiline = true;
+            resources.ApplyResources(this.txtLog, "txtLog");
             this.txtLog.Name = "txtLog";
-            this.txtLog.Size = new System.Drawing.Size(549, 195);
-            this.txtLog.TabIndex = 1;
+            this.txtLog.ReadOnly = true;
             // 
             // lblClickHere
             // 
-            this.lblClickHere.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblClickHere.AutoSize = true;
-            this.lblClickHere.Location = new System.Drawing.Point(9, 9);
+            resources.ApplyResources(this.lblClickHere, "lblClickHere");
             this.lblClickHere.Name = "lblClickHere";
-            this.lblClickHere.Size = new System.Drawing.Size(173, 13);
-            this.lblClickHere.TabIndex = 0;
-            this.lblClickHere.Text = "Click mouse button in the blue area";
             // 
             // lblResult
             // 
-            this.lblResult.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(9, 189);
+            resources.ApplyResources(this.lblResult, "lblResult");
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(40, 13);
-            this.lblResult.TabIndex = 0;
-            this.lblResult.Text = "&Result:";
             // 
             // chkShowDoubleClick
             // 
-            this.chkShowDoubleClick.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.chkShowDoubleClick.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkShowDoubleClick.AutoSize = true;
+            resources.ApplyResources(this.chkShowDoubleClick, "chkShowDoubleClick");
             this.chkShowDoubleClick.Checked = true;
             this.chkShowDoubleClick.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkShowDoubleClick.Location = new System.Drawing.Point(117, 406);
             this.chkShowDoubleClick.Name = "chkShowDoubleClick";
-            this.chkShowDoubleClick.Size = new System.Drawing.Size(104, 23);
-            this.chkShowDoubleClick.TabIndex = 2;
-            this.chkShowDoubleClick.Text = "Show &DoubleClick";
             this.chkShowDoubleClick.UseVisualStyleBackColor = true;
             // 
             // chkShowSingleClick
             // 
-            this.chkShowSingleClick.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.chkShowSingleClick.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkShowSingleClick.AutoSize = true;
+            resources.ApplyResources(this.chkShowSingleClick, "chkShowSingleClick");
             this.chkShowSingleClick.Checked = true;
             this.chkShowSingleClick.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkShowSingleClick.Location = new System.Drawing.Point(12, 406);
             this.chkShowSingleClick.Name = "chkShowSingleClick";
-            this.chkShowSingleClick.Size = new System.Drawing.Size(99, 23);
-            this.chkShowSingleClick.TabIndex = 3;
-            this.chkShowSingleClick.Text = "Show &SingleClick";
             this.chkShowSingleClick.UseVisualStyleBackColor = true;
             // 
             // chkShowDown
             // 
-            this.chkShowDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.chkShowDown.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkShowDown.AutoSize = true;
+            resources.ApplyResources(this.chkShowDown, "chkShowDown");
             this.chkShowDown.Checked = true;
             this.chkShowDown.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkShowDown.Location = new System.Drawing.Point(227, 406);
             this.chkShowDown.Name = "chkShowDown";
-            this.chkShowDown.Size = new System.Drawing.Size(75, 23);
-            this.chkShowDown.TabIndex = 4;
-            this.chkShowDown.Text = "Show Do&wn";
             this.chkShowDown.UseVisualStyleBackColor = true;
             // 
             // chkShowUp
             // 
-            this.chkShowUp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.chkShowUp.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkShowUp.AutoSize = true;
+            resources.ApplyResources(this.chkShowUp, "chkShowUp");
             this.chkShowUp.Checked = true;
             this.chkShowUp.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkShowUp.Location = new System.Drawing.Point(308, 406);
             this.chkShowUp.Name = "chkShowUp";
-            this.chkShowUp.Size = new System.Drawing.Size(61, 23);
-            this.chkShowUp.TabIndex = 4;
-            this.chkShowUp.Text = "Show &Up";
             this.chkShowUp.UseVisualStyleBackColor = true;
             // 
             // btnOK
             // 
-            this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.btnOK, "btnOK");
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(486, 406);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
-            this.btnOK.TabIndex = 5;
-            this.btnOK.Text = "&OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // FormMain
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(573, 434);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.chkShowUp);
             this.Controls.Add(this.chkShowDown);
@@ -167,9 +119,7 @@
             this.Controls.Add(this.lblClickHere);
             this.Controls.Add(this.txtLog);
             this.Controls.Add(this.panelClick);
-            this.MinimumSize = new System.Drawing.Size(479, 368);
             this.Name = "FormMain";
-            this.Text = "clickchecker";
             this.ResumeLayout(false);
             this.PerformLayout();
 

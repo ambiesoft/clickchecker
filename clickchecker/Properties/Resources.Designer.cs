@@ -59,5 +59,14 @@ namespace clickchecker.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save failed..
+        /// </summary>
+        internal static string SAVE_FAILED {
+            get {
+                return ResourceManager.GetString("SAVE_FAILED", resourceCulture);
+            }
+        }
     }
 }
