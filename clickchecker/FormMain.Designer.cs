@@ -1,6 +1,6 @@
 ﻿namespace clickchecker
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// 必要なデザイナ変数です。
