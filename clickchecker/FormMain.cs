@@ -16,42 +16,46 @@ namespace clickchecker
             InitializeComponent();
         }
 
-        private void panelClick_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panelClick_MouseClick(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void panelClick_DoubleClick(object sender, EventArgs e)
-        {
-
-        }
 
         private void panelClick_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            Logit("double",e);
+            if(chkShowDoubleClick.Checked)
+                Logit("Double",e,"");
         }
 
         int linecount_;
         private void panelClick_MouseDown(object sender, MouseEventArgs e)
         {
-            Logit("single",e);
+            if(chkShowSingleClick.Checked)
+                if(chkShowDown.Checked)
+                    Logit("Single",e,"down");
+        }
+        private void panelClick_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (chkShowSingleClick.Checked)
+                if (chkShowUp.Checked)
+                    Logit("Single", e,"up");
         }
 
-        private void Logit(string clicktype, MouseEventArgs e)
+        private void Logit(string clicktype, MouseEventArgs e, string upordown)
         {
             linecount_++;
             StringBuilder line = new StringBuilder();
             line.Append(linecount_);
             line.Append(": ");
             line.Append(clicktype);
+            line.Append(" ");
             line.Append(e.Button.ToString());
+            
+            line.Append(" count=");
+            line.Append(e.Clicks);
+
+            line.Append(" ");
+            line.Append(upordown);
+
             line.AppendLine();
             txtLog.AppendText(line.ToString());
         }
+
     }
 }
