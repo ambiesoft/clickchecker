@@ -34,6 +34,7 @@ namespace clickchecker
         {
             InitializeComponent();
 
+            this.panelClick.MouseWheel += panelClick_MouseWheel;
             // Load from ini file
             bool bval;
             try
@@ -66,6 +67,12 @@ namespace clickchecker
             sbTitle.Append("ver");
             sbTitle.Append(AmbLib.getAssemblyVersion(System.Reflection.Assembly.GetExecutingAssembly(), 3));
             this.Text = sbTitle.ToString();
+        }
+
+        void panelClick_MouseWheel(object sender, MouseEventArgs e)
+        {
+            if(chkShowWheel.Checked)
+                Logit("Wheel", e, e.Delta.ToString());
         }
 
 

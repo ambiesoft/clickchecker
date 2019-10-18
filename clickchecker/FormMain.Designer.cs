@@ -38,6 +38,7 @@
             this.chkShowDown = new System.Windows.Forms.CheckBox();
             this.chkShowUp = new System.Windows.Forms.CheckBox();
             this.btnOK = new System.Windows.Forms.Button();
+            this.chkShowWheel = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // panelClick
@@ -105,11 +106,20 @@
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
+            // chkShowWheel
+            // 
+            resources.ApplyResources(this.chkShowWheel, "chkShowWheel");
+            this.chkShowWheel.Checked = true;
+            this.chkShowWheel.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkShowWheel.Name = "chkShowWheel";
+            this.chkShowWheel.UseVisualStyleBackColor = true;
+            // 
             // FormMain
             // 
             this.AcceptButton = this.btnOK;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.chkShowWheel);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.chkShowUp);
             this.Controls.Add(this.chkShowDown);
@@ -136,6 +146,7 @@
         private System.Windows.Forms.CheckBox chkShowDown;
         private System.Windows.Forms.CheckBox chkShowUp;
         private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.CheckBox chkShowWheel;
     }
 }
 

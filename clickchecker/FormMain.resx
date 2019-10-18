@@ -126,7 +126,7 @@
     <value>12, 25</value>
   </data>
   <data name="panelClick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>549, 145</value>
+    <value>638, 145</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panelClick.TabIndex" type="System.Int32, mscorlib">
@@ -142,7 +142,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelClick.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="txtLog.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -154,7 +154,7 @@
     <value>True</value>
   </data>
   <data name="txtLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>549, 195</value>
+    <value>638, 197</value>
   </data>
   <data name="txtLog.TabIndex" type="System.Int32, mscorlib">
     <value>400</value>
@@ -169,7 +169,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtLog.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="lblClickHere.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -199,7 +199,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblClickHere.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="lblResult.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -229,7 +229,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblResult.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="chkShowDoubleClick.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -241,7 +241,7 @@
     <value>True</value>
   </data>
   <data name="chkShowDoubleClick.Location" type="System.Drawing.Point, System.Drawing">
-    <value>117, 406</value>
+    <value>117, 408</value>
   </data>
   <data name="chkShowDoubleClick.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 23</value>
@@ -262,7 +262,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowDoubleClick.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="chkShowSingleClick.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -274,7 +274,7 @@
     <value>True</value>
   </data>
   <data name="chkShowSingleClick.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 406</value>
+    <value>12, 408</value>
   </data>
   <data name="chkShowSingleClick.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 23</value>
@@ -295,7 +295,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowSingleClick.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="chkShowDown.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -307,7 +307,7 @@
     <value>True</value>
   </data>
   <data name="chkShowDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>227, 406</value>
+    <value>227, 408</value>
   </data>
   <data name="chkShowDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -328,7 +328,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowDown.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="chkShowUp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -340,7 +340,7 @@
     <value>True</value>
   </data>
   <data name="chkShowUp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>308, 406</value>
+    <value>308, 408</value>
   </data>
   <data name="chkShowUp.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 23</value>
@@ -361,13 +361,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowUp.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btnOK.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
   <data name="btnOK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 406</value>
+    <value>575, 408</value>
   </data>
   <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -388,6 +388,42 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnOK.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chkShowWheel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="chkShowWheel.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="chkShowWheel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkShowWheel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkShowWheel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>375, 408</value>
+  </data>
+  <data name="chkShowWheel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 23</value>
+  </data>
+  <data name="chkShowWheel.TabIndex" type="System.Int32, mscorlib">
+    <value>900</value>
+  </data>
+  <data name="chkShowWheel.Text" xml:space="preserve">
+    <value>Show W&amp;heel</value>
+  </data>
+  <data name="&gt;&gt;chkShowWheel.Name" xml:space="preserve">
+    <value>chkShowWheel</value>
+  </data>
+  <data name="&gt;&gt;chkShowWheel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkShowWheel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkShowWheel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -397,7 +433,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>573, 434</value>
+    <value>662, 436</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>479, 368</value>
