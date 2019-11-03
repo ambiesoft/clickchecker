@@ -13,6 +13,7 @@ namespace clickchecker
         [STAThread]
         static void Main()
         {
+            Ambiesoft.CppUtils.AmbSetProcessDPIAware();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
