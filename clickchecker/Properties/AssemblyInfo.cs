@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Ambiesoft")]
 [assembly: AssemblyProduct("clickchecker")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -16,5 +16,5 @@ using System.Runtime.InteropServices;
 
 [assembly: Guid("f14bef27-34d6-46e6-84ee-83003796c505")]
 
-[assembly: AssemblyVersion("1.0.2.*")]
+[assembly: AssemblyVersion("1.0.3.*")]
 

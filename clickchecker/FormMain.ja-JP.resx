@@ -119,39 +119,60 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblClickHere.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 13</value>
+    <value>128, 12</value>
   </data>
   <data name="lblClickHere.Text" xml:space="preserve">
     <value>青いエリアでマウスをクリック</value>
   </data>
   <data name="lblResult.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 13</value>
+    <value>47, 12</value>
   </data>
   <data name="lblResult.Text" xml:space="preserve">
     <value>結果(&amp;R):</value>
   </data>
+  <data name="chkShowDoubleClick.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 377</value>
+  </data>
   <data name="chkShowDoubleClick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 23</value>
+    <value>89, 22</value>
   </data>
   <data name="chkShowDoubleClick.Text" xml:space="preserve">
     <value>ダブルクリック(&amp;D)</value>
   </data>
+  <data name="chkShowSingleClick.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 377</value>
+  </data>
   <data name="chkShowSingleClick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 23</value>
+    <value>98, 22</value>
   </data>
   <data name="chkShowSingleClick.Text" xml:space="preserve">
     <value>シングルクリック(&amp;S)</value>
   </data>
+  <data name="chkShowDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 377</value>
+  </data>
   <data name="chkShowDown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 23</value>
+    <value>56, 22</value>
   </data>
   <data name="chkShowDown.Text" xml:space="preserve">
     <value>押下(&amp;W)</value>
   </data>
+  <data name="chkShowUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>273, 377</value>
+  </data>
   <data name="chkShowUp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 23</value>
+    <value>55, 22</value>
   </data>
   <data name="chkShowUp.Text" xml:space="preserve">
     <value>引上(&amp;U)</value>
+  </data>
+  <data name="chkShowWheel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>334, 377</value>
+  </data>
+  <data name="chkShowWheel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="chkShowWheel.Text" xml:space="preserve">
+    <value>ホイール(&amp;W)</value>
   </data>
 </root>
