@@ -1,6 +1,7 @@
 
 # /
 /*.suo
+build/
 
 # /clickchecker/
 /clickchecker/bin

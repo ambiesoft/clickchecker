@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panelClick.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="panelClick.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="panelClick.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 25</value>
+    <value>3, 18</value>
   </data>
   <data name="panelClick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>537, 145</value>
+    <value>532, 173</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panelClick.TabIndex" type="System.Int32, mscorlib">
@@ -139,22 +139,22 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panelClick.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>tableTop</value>
   </data>
   <data name="&gt;&gt;panelClick.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>1</value>
   </data>
   <data name="txtLog.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="txtLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 205</value>
+    <value>3, 18</value>
   </data>
   <data name="txtLog.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="txtLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>536, 196</value>
+    <value>532, 170</value>
   </data>
   <data name="txtLog.TabIndex" type="System.Int32, mscorlib">
     <value>400</value>
@@ -166,10 +166,10 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;txtLog.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>tableBottom</value>
   </data>
   <data name="&gt;&gt;txtLog.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>0</value>
   </data>
   <data name="lblClickHere.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -178,10 +178,10 @@
     <value>True</value>
   </data>
   <data name="lblClickHere.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 9</value>
+    <value>3, 0</value>
   </data>
   <data name="lblClickHere.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 13</value>
+    <value>532, 13</value>
   </data>
   <data name="lblClickHere.TabIndex" type="System.Int32, mscorlib">
     <value>100</value>
@@ -196,10 +196,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblClickHere.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>tableTop</value>
   </data>
   <data name="&gt;&gt;lblClickHere.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>0</value>
   </data>
   <data name="lblResult.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -208,10 +208,10 @@
     <value>True</value>
   </data>
   <data name="lblResult.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 190</value>
+    <value>3, 0</value>
   </data>
   <data name="lblResult.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 13</value>
+    <value>40, 15</value>
   </data>
   <data name="lblResult.TabIndex" type="System.Int32, mscorlib">
     <value>300</value>
@@ -226,10 +226,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblResult.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>tableBottom</value>
   </data>
   <data name="&gt;&gt;lblResult.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>1</value>
   </data>
   <data name="chkShowDoubleClick.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -262,7 +262,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowDoubleClick.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="chkShowSingleClick.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -295,7 +295,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowSingleClick.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="chkShowDown.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -328,7 +328,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowDown.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="chkShowUp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -361,13 +361,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowUp.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btnOK.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
   <data name="btnOK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>473, 407</value>
+    <value>475, 408</value>
   </data>
   <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 24</value>
@@ -388,7 +388,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnOK.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="chkShowWheel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -424,6 +424,126 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowWheel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitMain.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="splitMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="splitMain.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="tableTop.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableTop.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>538, 194</value>
+  </data>
+  <data name="tableTop.TabIndex" type="System.Int32, mscorlib">
+    <value>201</value>
+  </data>
+  <data name="&gt;&gt;tableTop.Name" xml:space="preserve">
+    <value>tableTop</value>
+  </data>
+  <data name="&gt;&gt;tableTop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableTop.Parent" xml:space="preserve">
+    <value>splitMain.Panel1</value>
+  </data>
+  <data name="&gt;&gt;tableTop.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableTop.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblClickHere" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panelClick" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,15,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Panel1.Name" xml:space="preserve">
+    <value>splitMain.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Panel1.Parent" xml:space="preserve">
+    <value>splitMain</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableBottom.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableBottom.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>538, 191</value>
+  </data>
+  <data name="tableBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>401</value>
+  </data>
+  <data name="&gt;&gt;tableBottom.Name" xml:space="preserve">
+    <value>tableBottom</value>
+  </data>
+  <data name="&gt;&gt;tableBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableBottom.Parent" xml:space="preserve">
+    <value>splitMain.Panel2</value>
+  </data>
+  <data name="&gt;&gt;tableBottom.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableBottom.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="txtLog" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblResult" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,15,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Panel2.Name" xml:space="preserve">
+    <value>splitMain.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Panel2.Parent" xml:space="preserve">
+    <value>splitMain</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>538, 389</value>
+  </data>
+  <data name="splitMain.SplitterDistance" type="System.Int32, mscorlib">
+    <value>194</value>
+  </data>
+  <data name="splitMain.TabIndex" type="System.Int32, mscorlib">
+    <value>10001</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Name" xml:space="preserve">
+    <value>splitMain</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitMain.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -804,7 +924,7 @@
 </value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>559, 480</value>
+    <value>578, 481</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>clickchecker</value>

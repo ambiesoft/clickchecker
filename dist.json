@@ -1,0 +1,33 @@
+{
+    "name": "clickchecker",
+    "solution": "clickchecker.sln",
+    "targetproject": "clickchecker",
+    "configuration": "Release",
+    "targets": [
+        {
+            "setoutdirforbuild": true,
+            "outdir": "build\\clickchecker",
+            "platform": "Any CPU"
+        }
+    ],
+    "ShouldBeFiles": [
+        "Ambiesoft.AmbLib.dll",
+        "Ambiesoft.AmbLib.pdb",
+        "Ambiesoft.AmbLibcpp.dll",
+        "Ambiesoft.AmbLibcpp.pdb",
+        "Ambiesoft.Profile.dll",
+        "Ambiesoft.Profile.pdb",
+        "clickchecker.exe",
+        "clickchecker.pdb",
+        "ja-JP\\clickchecker.resources.dll",
+        "history.txt"
+    ],
+    "TotalFileCount": "exact",
+    "archivedir": "C:\\Linkout",
+    "remotedir": "https://ambiesoft.fam.cx/ffdav/uploads/clickchecker/",
+    "remotesha1": "https://ambiesoft.fam.cx/ffdav/uploads/getSha1.php?file=clickchecker/{}",
+    "ShouldNotBeFiles": [],
+    "ShouldBeOneOfThem": [],
+    "obtainverfrom": "history.txt",
+    "obtainverregex": "\\d+\\.\\d+\\.\\d+"
+}

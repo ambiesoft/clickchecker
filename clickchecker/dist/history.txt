@@ -1,2 +1,5 @@
+2020/02/21 ver1.0.4
+split
+
 2020/01/26 ver1.0.3
 Form control's position
