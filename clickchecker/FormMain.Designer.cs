@@ -29,9 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            this.panelClick = new System.Windows.Forms.Panel();
-            this.txtLog = new System.Windows.Forms.TextBox();
+            this.splitMain = new System.Windows.Forms.SplitContainer();
+            this.tableTop = new System.Windows.Forms.TableLayoutPanel();
             this.lblClickHere = new System.Windows.Forms.Label();
+            this.panelClick = new System.Windows.Forms.Panel();
+            this.tableBottom = new System.Windows.Forms.TableLayoutPanel();
+            this.txtLog = new System.Windows.Forms.TextBox();
             this.lblResult = new System.Windows.Forms.Label();
             this.chkShowDoubleClick = new System.Windows.Forms.CheckBox();
             this.chkShowSingleClick = new System.Windows.Forms.CheckBox();
@@ -39,36 +42,62 @@
             this.chkShowUp = new System.Windows.Forms.CheckBox();
             this.btnOK = new System.Windows.Forms.Button();
             this.chkShowWheel = new System.Windows.Forms.CheckBox();
-            this.splitMain = new System.Windows.Forms.SplitContainer();
-            this.tableBottom = new System.Windows.Forms.TableLayoutPanel();
-            this.tableTop = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.splitMain)).BeginInit();
             this.splitMain.Panel1.SuspendLayout();
             this.splitMain.Panel2.SuspendLayout();
             this.splitMain.SuspendLayout();
-            this.tableBottom.SuspendLayout();
             this.tableTop.SuspendLayout();
+            this.tableBottom.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // splitMain
+            // 
+            resources.ApplyResources(this.splitMain, "splitMain");
+            this.splitMain.Name = "splitMain";
+            // 
+            // splitMain.Panel1
+            // 
+            resources.ApplyResources(this.splitMain.Panel1, "splitMain.Panel1");
+            this.splitMain.Panel1.Controls.Add(this.tableTop);
+            // 
+            // splitMain.Panel2
+            // 
+            resources.ApplyResources(this.splitMain.Panel2, "splitMain.Panel2");
+            this.splitMain.Panel2.Controls.Add(this.tableBottom);
+            // 
+            // tableTop
+            // 
+            resources.ApplyResources(this.tableTop, "tableTop");
+            this.tableTop.Controls.Add(this.lblClickHere, 0, 0);
+            this.tableTop.Controls.Add(this.panelClick, 0, 1);
+            this.tableTop.Name = "tableTop";
+            // 
+            // lblClickHere
+            // 
+            resources.ApplyResources(this.lblClickHere, "lblClickHere");
+            this.lblClickHere.Name = "lblClickHere";
             // 
             // panelClick
             // 
-            this.panelClick.BackColor = System.Drawing.Color.Blue;
             resources.ApplyResources(this.panelClick, "panelClick");
+            this.panelClick.BackColor = System.Drawing.Color.Blue;
             this.panelClick.Name = "panelClick";
             this.panelClick.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panelClick_MouseDoubleClick);
             this.panelClick.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelClick_MouseDown);
             this.panelClick.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelClick_MouseUp);
+            // 
+            // tableBottom
+            // 
+            resources.ApplyResources(this.tableBottom, "tableBottom");
+            this.tableBottom.Controls.Add(this.txtLog, 0, 1);
+            this.tableBottom.Controls.Add(this.lblResult, 0, 0);
+            this.tableBottom.Name = "tableBottom";
             // 
             // txtLog
             // 
             resources.ApplyResources(this.txtLog, "txtLog");
             this.txtLog.Name = "txtLog";
             this.txtLog.ReadOnly = true;
-            // 
-            // lblClickHere
-            // 
-            resources.ApplyResources(this.lblClickHere, "lblClickHere");
-            this.lblClickHere.Name = "lblClickHere";
             // 
             // lblResult
             // 
@@ -123,33 +152,6 @@
             this.chkShowWheel.Name = "chkShowWheel";
             this.chkShowWheel.UseVisualStyleBackColor = true;
             // 
-            // splitMain
-            // 
-            resources.ApplyResources(this.splitMain, "splitMain");
-            this.splitMain.Name = "splitMain";
-            // 
-            // splitMain.Panel1
-            // 
-            this.splitMain.Panel1.Controls.Add(this.tableTop);
-            // 
-            // splitMain.Panel2
-            // 
-            this.splitMain.Panel2.Controls.Add(this.tableBottom);
-            // 
-            // tableBottom
-            // 
-            resources.ApplyResources(this.tableBottom, "tableBottom");
-            this.tableBottom.Controls.Add(this.txtLog, 0, 1);
-            this.tableBottom.Controls.Add(this.lblResult, 0, 0);
-            this.tableBottom.Name = "tableBottom";
-            // 
-            // tableTop
-            // 
-            resources.ApplyResources(this.tableTop, "tableTop");
-            this.tableTop.Controls.Add(this.lblClickHere, 0, 0);
-            this.tableTop.Controls.Add(this.panelClick, 0, 1);
-            this.tableTop.Name = "tableTop";
-            // 
             // FormMain
             // 
             this.AcceptButton = this.btnOK;
@@ -167,10 +169,10 @@
             this.splitMain.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitMain)).EndInit();
             this.splitMain.ResumeLayout(false);
-            this.tableBottom.ResumeLayout(false);
-            this.tableBottom.PerformLayout();
             this.tableTop.ResumeLayout(false);
             this.tableTop.PerformLayout();
+            this.tableBottom.ResumeLayout(false);
+            this.tableBottom.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
