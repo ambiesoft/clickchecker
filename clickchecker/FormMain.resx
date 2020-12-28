@@ -138,14 +138,11 @@
   <data name="tableBottom.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="chkShowUp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
   <data name="&gt;&gt;lblClickHere.Parent" xml:space="preserve">
     <value>tableTop</value>
   </data>
-  <data name="tableTop.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="chkShowDoubleClick.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 23</value>
   </data>
   <data name="chkShowWheel.TabIndex" type="System.Int32, mscorlib">
     <value>900</value>
@@ -158,9 +155,6 @@
   </data>
   <data name="txtLog.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 18</value>
-  </data>
-  <data name="&gt;&gt;splitMain.Panel2.Name" xml:space="preserve">
-    <value>splitMain.Panel2</value>
   </data>
   <data name="&gt;&gt;chkShowSingleClick.Name" xml:space="preserve">
     <value>chkShowSingleClick</value>
@@ -181,7 +175,7 @@
     <value>500</value>
   </data>
   <data name="chkShowSingleClick.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 408</value>
+    <value>12, 409</value>
   </data>
   <data name="&gt;&gt;tableBottom.Name" xml:space="preserve">
     <value>tableBottom</value>
@@ -201,8 +195,11 @@
   <data name="&gt;&gt;splitMain.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>clickchecker</value>
+  <data name="btnOK.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="tableBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="splitMain.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
@@ -220,10 +217,10 @@
     <value>Button</value>
   </data>
   <data name="btnOK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>475, 408</value>
+    <value>554, 408</value>
   </data>
   <data name="splitMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>538, 389</value>
+    <value>617, 389</value>
   </data>
   <data name="&gt;&gt;splitMain.Name" xml:space="preserve">
     <value>splitMain</value>
@@ -617,8 +614,8 @@
   <data name="&gt;&gt;panelClick.Name" xml:space="preserve">
     <value>panelClick</value>
   </data>
-  <data name="chkShowDown.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 24</value>
   </data>
   <data name="&gt;&gt;chkShowDoubleClick.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -635,14 +632,14 @@
   <data name="lblResult.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
   </data>
-  <data name="btnOK.TabIndex" type="System.Int32, mscorlib">
-    <value>10000</value>
+  <data name="tableBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>617, 191</value>
   </data>
   <data name="&gt;&gt;chkShowWheel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tableBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;tableTop.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="lblClickHere.Text" xml:space="preserve">
     <value>Click mouse button in the blue area</value>
@@ -680,6 +677,9 @@
   <data name="tableTop.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="chkShowDown.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="chkShowUp.TabIndex" type="System.Int32, mscorlib">
     <value>800</value>
   </data>
@@ -692,8 +692,8 @@
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>578, 481</value>
   </data>
-  <data name="chkShowDoubleClick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 23</value>
+  <data name="&gt;&gt;btnOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tableBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -708,13 +708,13 @@
     <value>btnOK</value>
   </data>
   <data name="txtLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>532, 170</value>
+    <value>611, 170</value>
   </data>
   <data name="lblClickHere.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
   </data>
   <data name="tableTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>538, 194</value>
+    <value>617, 194</value>
   </data>
   <data name="&gt;&gt;lblResult.Parent" xml:space="preserve">
     <value>tableBottom</value>
@@ -723,10 +723,13 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chkShowUp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>314, 408</value>
+    <value>358, 409</value>
   </data>
-  <data name="lblResult.TabIndex" type="System.Int32, mscorlib">
-    <value>300</value>
+  <data name="chkShowWheel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tableTop.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;chkShowSingleClick.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -737,14 +740,11 @@
   <data name="&gt;&gt;chkShowDown.Name" xml:space="preserve">
     <value>chkShowDown</value>
   </data>
-  <data name="chkShowDown.Text" xml:space="preserve">
-    <value>Show Do&amp;wn</value>
-  </data>
   <data name="&gt;&gt;splitMain.Panel2.Parent" xml:space="preserve">
     <value>splitMain</value>
   </data>
   <data name="chkShowDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>234, 408</value>
+    <value>277, 409</value>
   </data>
   <data name="&gt;&gt;tableBottom.Parent" xml:space="preserve">
     <value>splitMain.Panel2</value>
@@ -755,8 +755,14 @@
   <data name="chkShowDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
+  <data name="lblResult.TabIndex" type="System.Int32, mscorlib">
+    <value>300</value>
+  </data>
   <data name="&gt;&gt;chkShowWheel.Name" xml:space="preserve">
     <value>chkShowWheel</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>clickchecker</value>
   </data>
   <data name="&gt;&gt;chkShowDoubleClick.Parent" xml:space="preserve">
     <value>$this</value>
@@ -786,10 +792,16 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chkShowWheel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 408</value>
+    <value>425, 409</value>
   </data>
   <data name="splitMain.TabIndex" type="System.Int32, mscorlib">
     <value>10001</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnOK.TabIndex" type="System.Int32, mscorlib">
+    <value>10000</value>
   </data>
   <data name="&gt;&gt;lblClickHere.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -797,8 +809,8 @@
   <data name="&gt;&gt;chkShowDown.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="chkShowDown.Text" xml:space="preserve">
+    <value>Show Do&amp;wn</value>
   </data>
   <data name="chkShowWheel.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -808,12 +820,6 @@
   </data>
   <data name="tableBottom.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="txtLog" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblResult" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,15,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="&gt;&gt;tableTop.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnOK.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="txtLog.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -858,7 +864,7 @@
     <value>Show &amp;Up</value>
   </data>
   <data name="lblClickHere.Size" type="System.Drawing.Size, System.Drawing">
-    <value>532, 13</value>
+    <value>611, 13</value>
   </data>
   <data name="chkShowWheel.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 23</value>
@@ -867,13 +873,13 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>562, 442</value>
+    <value>641, 442</value>
   </data>
   <data name="&gt;&gt;txtLog.Parent" xml:space="preserve">
     <value>tableBottom</value>
   </data>
   <data name="chkShowDoubleClick.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 408</value>
+    <value>117, 409</value>
   </data>
   <data name="chkShowSingleClick.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -890,14 +896,11 @@
   <data name="&gt;&gt;chkShowUp.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="tableBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>538, 191</value>
+  <data name="&gt;&gt;splitMain.Panel2.Name" xml:space="preserve">
+    <value>splitMain.Panel2</value>
   </data>
   <data name="&gt;&gt;chkShowSingleClick.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="chkShowSingleClick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 23</value>
   </data>
   <data name="&gt;&gt;chkShowUp.Name" xml:space="preserve">
     <value>chkShowUp</value>
@@ -905,8 +908,8 @@
   <data name="splitMain.SplitterDistance" type="System.Int32, mscorlib">
     <value>194</value>
   </data>
-  <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 24</value>
+  <data name="chkShowSingleClick.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 23</value>
   </data>
   <data name="lblClickHere.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -918,16 +921,13 @@
     <value>2</value>
   </data>
   <data name="panelClick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>532, 173</value>
-  </data>
-  <data name="chkShowWheel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+    <value>611, 173</value>
   </data>
   <data name="chkShowWheel.Text" xml:space="preserve">
     <value>Show W&amp;heel</value>
   </data>
-  <data name="btnOK.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
+  <data name="chkShowUp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
   </data>
   <data name="&gt;&gt;chkShowUp.ZOrder" xml:space="preserve">
     <value>3</value>

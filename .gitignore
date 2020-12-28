@@ -6,3 +6,7 @@ build/
 # /clickchecker/
 /clickchecker/bin
 /clickchecker/obj
+
+.vs/
+*~
+
