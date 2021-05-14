@@ -1,3 +1,7 @@
+2021/05/14 ver1.0.6
+Save Pos on Close
+Add InfoForm
+
 2020/12/28 ver1.0.5
 Fixed: Jpn had no buttons
 to2019

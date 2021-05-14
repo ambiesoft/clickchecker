@@ -42,6 +42,7 @@
             this.chkShowUp = new System.Windows.Forms.CheckBox();
             this.btnOK = new System.Windows.Forms.Button();
             this.chkShowWheel = new System.Windows.Forms.CheckBox();
+            this.btnInfo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitMain)).BeginInit();
             this.splitMain.Panel1.SuspendLayout();
             this.splitMain.Panel2.SuspendLayout();
@@ -57,12 +58,10 @@
             // 
             // splitMain.Panel1
             // 
-            resources.ApplyResources(this.splitMain.Panel1, "splitMain.Panel1");
             this.splitMain.Panel1.Controls.Add(this.tableTop);
             // 
             // splitMain.Panel2
             // 
-            resources.ApplyResources(this.splitMain.Panel2, "splitMain.Panel2");
             this.splitMain.Panel2.Controls.Add(this.tableBottom);
             // 
             // tableTop
@@ -79,8 +78,8 @@
             // 
             // panelClick
             // 
-            resources.ApplyResources(this.panelClick, "panelClick");
             this.panelClick.BackColor = System.Drawing.Color.Blue;
+            resources.ApplyResources(this.panelClick, "panelClick");
             this.panelClick.Name = "panelClick";
             this.panelClick.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panelClick_MouseDoubleClick);
             this.panelClick.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelClick_MouseDown);
@@ -142,7 +141,6 @@
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnOK.Name = "btnOK";
             this.btnOK.UseVisualStyleBackColor = true;
-            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // chkShowWheel
             // 
@@ -152,11 +150,19 @@
             this.chkShowWheel.Name = "chkShowWheel";
             this.chkShowWheel.UseVisualStyleBackColor = true;
             // 
+            // btnInfo
+            // 
+            resources.ApplyResources(this.btnInfo, "btnInfo");
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.UseVisualStyleBackColor = true;
+            this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
+            // 
             // FormMain
             // 
             this.AcceptButton = this.btnOK;
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.splitMain);
             this.Controls.Add(this.chkShowWheel);
             this.Controls.Add(this.btnOK);
@@ -165,6 +171,8 @@
             this.Controls.Add(this.chkShowSingleClick);
             this.Controls.Add(this.chkShowDoubleClick);
             this.Name = "FormMain";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMain_FormClosed);
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.splitMain.Panel1.ResumeLayout(false);
             this.splitMain.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitMain)).EndInit();
@@ -193,6 +201,7 @@
         private System.Windows.Forms.SplitContainer splitMain;
         private System.Windows.Forms.TableLayoutPanel tableTop;
         private System.Windows.Forms.TableLayoutPanel tableBottom;
+        private System.Windows.Forms.Button btnInfo;
     }
 }
 
