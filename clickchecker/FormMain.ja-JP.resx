@@ -122,40 +122,31 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblResult.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 15</value>
+    <value>52, 15</value>
   </data>
   <data name="lblResult.Text" xml:space="preserve">
     <value>結果(&amp;R):</value>
   </data>
-  <data name="chkShowDoubleClick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 23</value>
-  </data>
   <data name="chkShowDoubleClick.Text" xml:space="preserve">
     <value>ダブルクリック(&amp;D)</value>
-  </data>
-  <data name="chkShowSingleClick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 23</value>
   </data>
   <data name="chkShowSingleClick.Text" xml:space="preserve">
     <value>シングルクリック(&amp;S)</value>
   </data>
-  <data name="chkShowDown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 23</value>
-  </data>
   <data name="chkShowDown.Text" xml:space="preserve">
     <value>ダウン(&amp;W)</value>
-  </data>
-  <data name="chkShowUp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 23</value>
   </data>
   <data name="chkShowUp.Text" xml:space="preserve">
     <value>アップ(&amp;U)</value>
   </data>
-  <data name="chkShowWheel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 23</value>
-  </data>
   <data name="chkShowWheel.Text" xml:space="preserve">
     <value>ホイール(&amp;H)</value>
+  </data>
+  <data name="btnInfo.Text" xml:space="preserve">
+    <value>情報(&amp;I)</value>
+  </data>
+  <data name="chkShowMove.Text" xml:space="preserve">
+    <value>移動(&amp;M)</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

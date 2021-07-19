@@ -10,6 +10,7 @@ using System.IO;
 
 using Ambiesoft;
 using System.Diagnostics;
+using System.Reflection;
 
 namespace clickchecker
 {
@@ -20,6 +21,8 @@ namespace clickchecker
         readonly string KEY_CHECK_DOUBLECLICK = "CheckDoubleClick";
         readonly string KEY_CHECK_UP = "CheckUp";
         readonly string KEY_CHECK_DOWN = "CheckDown";
+        readonly string KEY_CHECK_WHEEL = "CheckWheel";
+        readonly string KEY_CHECK_MOVE = "CheckMove";
         readonly string KEY_SPLITTER_DISTANCE = "SplitterDistance";
 
         readonly string SECTION_LOCATION = "Window";
@@ -52,11 +55,16 @@ namespace clickchecker
                 chkShowUp.Checked = bval;
                 Profile.GetBool(SECTION_OPTION, KEY_CHECK_DOWN, true, out bval, ini_);
                 chkShowDown.Checked = bval;
+                Profile.GetBool(SECTION_OPTION, KEY_CHECK_WHEEL, true, out bval, ini_);
+                chkShowWheel.Checked = bval;
+                Profile.GetBool(SECTION_OPTION, KEY_CHECK_MOVE, true, out bval, ini_);
+                chkShowMove.Checked = bval;
 
                 AmbLib.LoadFormXYWH(this, SECTION_LOCATION, ini_);
             }
             catch(FileNotFoundException)
-            { }
+            { 
+            }
             catch (Exception ex)
             {
                 CppUtils.Alert(ex);
@@ -94,6 +102,11 @@ namespace clickchecker
                     Logit("Single", e,"up");
         }
 
+        private void panelClick_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (chkShowMove.Checked)
+                Logit("Move", e, string.Format("X={0},Y={1}", e.X, e.Y));
+        }
         private void Logit(string clicktype, MouseEventArgs e, string upordown)
         {
             linecount_++;
@@ -124,6 +137,8 @@ namespace clickchecker
             success &= Profile.WriteBool(SECTION_OPTION, KEY_CHECK_DOUBLECLICK, chkShowDoubleClick.Checked, ini);
             success &= Profile.WriteBool(SECTION_OPTION, KEY_CHECK_UP, chkShowUp.Checked, ini);
             success &= Profile.WriteBool(SECTION_OPTION, KEY_CHECK_DOWN, chkShowDown.Checked, ini);
+            success &= Profile.WriteBool(SECTION_OPTION, KEY_CHECK_WHEEL, chkShowWheel.Checked, ini);
+            success &= Profile.WriteBool(SECTION_OPTION, KEY_CHECK_MOVE, chkShowMove.Checked, ini);
 
             success &= AmbLib.SaveFormXYWH(this, SECTION_LOCATION, ini);
 
@@ -150,18 +165,30 @@ namespace clickchecker
         private void FormMain_Load(object sender, EventArgs e)
         {
             int ival;
-            Debug.Assert(ini_ != null);
-            Profile.GetInt(SECTION_OPTION, KEY_SPLITTER_DISTANCE, -1, out ival, ini_);
-            if (ival != -1)
-                splitMain.SplitterDistance = ival;
+            if (ini_ != null)
+            {
+                Profile.GetInt(SECTION_OPTION, KEY_SPLITTER_DISTANCE, -1, out ival, ini_);
+                if (ival != -1)
+                    splitMain.SplitterDistance = ival;
+            }
         }
 
         private void btnInfo_Click(object sender, EventArgs e)
         {
-            using (var frm = new FormInfo())
-            {
-                frm.ShowDialog(this);
-            }
+            var message = new StringBuilder();
+            message.AppendLine(string.Format("{0} v{1}",
+                Application.ProductName,
+                AmbLib.getAssemblyVersion(Assembly.GetExecutingAssembly(), 3)));
+            message.AppendLine();
+            message.AppendLine("https://ambiesoft.github.io/webjumper/?target=clickchecker");
+
+            JR.Utils.GUI.Forms.FlexibleMessageBox.Show(this,
+                message.ToString(),
+                Application.ProductName,
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+                
         }
+
     }
 }

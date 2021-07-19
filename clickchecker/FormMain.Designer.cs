@@ -43,6 +43,7 @@
             this.btnOK = new System.Windows.Forms.Button();
             this.chkShowWheel = new System.Windows.Forms.CheckBox();
             this.btnInfo = new System.Windows.Forms.Button();
+            this.chkShowMove = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitMain)).BeginInit();
             this.splitMain.Panel1.SuspendLayout();
             this.splitMain.Panel2.SuspendLayout();
@@ -83,6 +84,7 @@
             this.panelClick.Name = "panelClick";
             this.panelClick.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panelClick_MouseDoubleClick);
             this.panelClick.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelClick_MouseDown);
+            this.panelClick.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelClick_MouseMove);
             this.panelClick.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelClick_MouseUp);
             // 
             // tableBottom
@@ -157,11 +159,20 @@
             this.btnInfo.UseVisualStyleBackColor = true;
             this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
             // 
+            // chkShowMove
+            // 
+            resources.ApplyResources(this.chkShowMove, "chkShowMove");
+            this.chkShowMove.Checked = true;
+            this.chkShowMove.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkShowMove.Name = "chkShowMove";
+            this.chkShowMove.UseVisualStyleBackColor = true;
+            // 
             // FormMain
             // 
             this.AcceptButton = this.btnOK;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.chkShowMove);
             this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.splitMain);
             this.Controls.Add(this.chkShowWheel);
@@ -182,7 +193,6 @@
             this.tableBottom.ResumeLayout(false);
             this.tableBottom.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -202,6 +212,7 @@
         private System.Windows.Forms.TableLayoutPanel tableTop;
         private System.Windows.Forms.TableLayoutPanel tableBottom;
         private System.Windows.Forms.Button btnInfo;
+        private System.Windows.Forms.CheckBox chkShowMove;
     }
 }
 

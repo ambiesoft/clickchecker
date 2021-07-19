@@ -1,3 +1,7 @@
+2021/07/19 ver1.0.8
+Add 'move'
+Change button position
+
 2021/05/14 ver1.0.7
 Fix: Version info
 
