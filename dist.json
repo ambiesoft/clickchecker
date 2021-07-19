@@ -17,6 +17,8 @@
         "Ambiesoft.AmbLibcpp.pdb",
         "Ambiesoft.Profile.dll",
         "Ambiesoft.Profile.pdb",
+		"FlexibleMessageBox.pdb",
+		"FlexibleMessageBox.dll",
         "clickchecker.exe",
         "clickchecker.pdb",
         "ja-JP\\clickchecker.resources.dll",
