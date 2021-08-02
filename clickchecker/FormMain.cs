@@ -110,8 +110,11 @@ namespace clickchecker
         private void Logit(string clicktype, MouseEventArgs e, string upordown)
         {
             linecount_++;
+            if (linecount_ > 9999)
+                linecount_ = 0;
             StringBuilder line = new StringBuilder();
-            line.Append(linecount_);
+            //line.Append(linecount_);
+            line.AppendFormat("{0:0000}", linecount_);
             line.Append(": ");
             line.Append(clicktype);
             line.Append(" ");

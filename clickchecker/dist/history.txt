@@ -1,3 +1,6 @@
+2021/08/02 ver1.0.9
+Modify: makes line number four digits
+
 2021/07/19 ver1.0.8
 Add 'move'
 Change button position
