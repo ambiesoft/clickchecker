@@ -1,3 +1,6 @@
+2021/10/21 ver1.0.10
+Added: Add 'Clear' button
+
 2021/08/02 ver1.0.9
 Modify: makes line number four digits
 

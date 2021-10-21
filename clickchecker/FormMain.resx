@@ -132,24 +132,6 @@
   <data name="tableTop.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="lblClickHere.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="lblClickHere.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblClickHere.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
-  </data>
-  <data name="lblClickHere.Size" type="System.Drawing.Size, System.Drawing">
-    <value>639, 14</value>
-  </data>
-  <data name="lblClickHere.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="lblClickHere.Text" xml:space="preserve">
-    <value>Click mouse button in the blue area</value>
-  </data>
   <data name="&gt;&gt;lblClickHere.Name" xml:space="preserve">
     <value>lblClickHere</value>
   </data>
@@ -161,18 +143,6 @@
   </data>
   <data name="&gt;&gt;lblClickHere.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="panelClick.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panelClick.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 18</value>
-  </data>
-  <data name="panelClick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>639, 80</value>
-  </data>
-  <data name="panelClick.TabIndex" type="System.Int32, mscorlib">
-    <value>800</value>
   </data>
   <data name="&gt;&gt;panelClick.Name" xml:space="preserve">
     <value>panelClick</value>
@@ -231,21 +201,6 @@
   <data name="tableBottom.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="txtLog.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="txtLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 18</value>
-  </data>
-  <data name="txtLog.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>639, 133</value>
-  </data>
-  <data name="txtLog.TabIndex" type="System.Int32, mscorlib">
-    <value>1000</value>
-  </data>
   <data name="&gt;&gt;txtLog.Name" xml:space="preserve">
     <value>txtLog</value>
   </data>
@@ -257,24 +212,6 @@
   </data>
   <data name="&gt;&gt;txtLog.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="lblResult.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
-  </data>
-  <data name="lblResult.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblResult.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
-  </data>
-  <data name="lblResult.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 15</value>
-  </data>
-  <data name="lblResult.TabIndex" type="System.Int32, mscorlib">
-    <value>900</value>
-  </data>
-  <data name="lblResult.Text" xml:space="preserve">
-    <value>&amp;Result:</value>
   </data>
   <data name="&gt;&gt;lblResult.Name" xml:space="preserve">
     <value>lblResult</value>
@@ -349,7 +286,118 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;splitMain.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
+  </data>
+  <data name="lblClickHere.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblClickHere.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblClickHere.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="lblClickHere.Size" type="System.Drawing.Size, System.Drawing">
+    <value>639, 14</value>
+  </data>
+  <data name="lblClickHere.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="lblClickHere.Text" xml:space="preserve">
+    <value>Click mouse button in the blue area</value>
+  </data>
+  <data name="&gt;&gt;lblClickHere.Name" xml:space="preserve">
+    <value>lblClickHere</value>
+  </data>
+  <data name="&gt;&gt;lblClickHere.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblClickHere.Parent" xml:space="preserve">
+    <value>tableTop</value>
+  </data>
+  <data name="&gt;&gt;lblClickHere.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelClick.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelClick.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 18</value>
+  </data>
+  <data name="panelClick.Size" type="System.Drawing.Size, System.Drawing">
+    <value>639, 80</value>
+  </data>
+  <data name="panelClick.TabIndex" type="System.Int32, mscorlib">
+    <value>800</value>
+  </data>
+  <data name="&gt;&gt;panelClick.Name" xml:space="preserve">
+    <value>panelClick</value>
+  </data>
+  <data name="&gt;&gt;panelClick.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelClick.Parent" xml:space="preserve">
+    <value>tableTop</value>
+  </data>
+  <data name="&gt;&gt;panelClick.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtLog.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="txtLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 18</value>
+  </data>
+  <data name="txtLog.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>639, 133</value>
+  </data>
+  <data name="txtLog.TabIndex" type="System.Int32, mscorlib">
+    <value>1000</value>
+  </data>
+  <data name="&gt;&gt;txtLog.Name" xml:space="preserve">
+    <value>txtLog</value>
+  </data>
+  <data name="&gt;&gt;txtLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtLog.Parent" xml:space="preserve">
+    <value>tableBottom</value>
+  </data>
+  <data name="&gt;&gt;txtLog.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblResult.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="lblResult.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblResult.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="lblResult.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 15</value>
+  </data>
+  <data name="lblResult.TabIndex" type="System.Int32, mscorlib">
+    <value>900</value>
+  </data>
+  <data name="lblResult.Text" xml:space="preserve">
+    <value>&amp;Result:</value>
+  </data>
+  <data name="&gt;&gt;lblResult.Name" xml:space="preserve">
+    <value>lblResult</value>
+  </data>
+  <data name="&gt;&gt;lblResult.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblResult.Parent" xml:space="preserve">
+    <value>tableBottom</value>
+  </data>
+  <data name="&gt;&gt;lblResult.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="chkShowDoubleClick.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -376,7 +424,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowDoubleClick.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="chkShowSingleClick.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -403,7 +451,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowSingleClick.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="chkShowDown.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -430,7 +478,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowDown.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="chkShowUp.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -457,7 +505,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowUp.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="btnOK.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -484,7 +532,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnOK.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="chkShowWheel.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -514,7 +562,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowWheel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btnInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -541,7 +589,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnInfo.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="chkShowMove.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -571,6 +619,33 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkShowMove.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnClear.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnClear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 295</value>
+  </data>
+  <data name="btnClear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 24</value>
+  </data>
+  <data name="btnClear.TabIndex" type="System.Int32, mscorlib">
+    <value>10500</value>
+  </data>
+  <data name="btnClear.Text" xml:space="preserve">
+    <value>&amp;Clear</value>
+  </data>
+  <data name="&gt;&gt;btnClear.Name" xml:space="preserve">
+    <value>btnClear</value>
+  </data>
+  <data name="&gt;&gt;btnClear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnClear.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnClear.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

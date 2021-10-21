@@ -44,6 +44,7 @@
             this.chkShowWheel = new System.Windows.Forms.CheckBox();
             this.btnInfo = new System.Windows.Forms.Button();
             this.chkShowMove = new System.Windows.Forms.CheckBox();
+            this.btnClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitMain)).BeginInit();
             this.splitMain.Panel1.SuspendLayout();
             this.splitMain.Panel2.SuspendLayout();
@@ -167,11 +168,19 @@
             this.chkShowMove.Name = "chkShowMove";
             this.chkShowMove.UseVisualStyleBackColor = true;
             // 
+            // btnClear
+            // 
+            resources.ApplyResources(this.btnClear, "btnClear");
+            this.btnClear.Name = "btnClear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // FormMain
             // 
             this.AcceptButton = this.btnOK;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.chkShowMove);
             this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.splitMain);
@@ -213,6 +222,7 @@
         private System.Windows.Forms.TableLayoutPanel tableBottom;
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.CheckBox chkShowMove;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 
