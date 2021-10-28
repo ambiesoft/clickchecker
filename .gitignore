@@ -6,6 +6,7 @@ build/
 # /clickchecker/
 /clickchecker/bin
 /clickchecker/obj
+gitrev.cs
 
 .vs/
 *~

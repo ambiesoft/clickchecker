@@ -184,6 +184,10 @@ namespace clickchecker
                 AmbLib.getAssemblyVersion(Assembly.GetExecutingAssembly(), 3)));
             message.AppendLine();
             message.AppendLine("https://ambiesoft.github.io/webjumper/?target=clickchecker");
+            message.AppendLine();
+
+            message.AppendLine("Gitrev:");
+            message.AppendLine(GitRev.GetHashMessage());
 
             JR.Utils.GUI.Forms.FlexibleMessageBox.Show(this,
                 message.ToString(),

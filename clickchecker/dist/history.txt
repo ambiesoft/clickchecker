@@ -1,3 +1,6 @@
+2021/10/28 ver1.0.11
+Added: Gitrev
+
 2021/10/21 ver1.0.10
 Added: Add 'Clear' button
 
